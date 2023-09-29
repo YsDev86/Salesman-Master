@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Popcard Salesmen",
+    "slug": "popcard-salesmen",
+    "version": "1.11.3",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash-screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "jsEngine": "jsc",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.popcard",
+      "buildNumber": "25"
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": ["android.permission.NFC"],
+      "package": "com.popcardsalesmen"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-nfc-manager",
+        {
+          "includeNdefEntitlement": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "546741a9-4bdf-427c-99ad-ae1f5682cbc2"
+      }
+    }
+  }
+}
